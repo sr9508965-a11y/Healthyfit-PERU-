@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.pagina{
+width: 100%;
+}
+nav{
+    background-color: #0F2D5B;
+
+    width: 100%;
+
+    min-height: 100px;
+
+    border-radius: 20px 20px 0px 0px;
+
+    display: flex;
+
+    align-items: center;
+}
+    nav img{
+        width: 65px;
+    }
+.enlaces-menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.enlaces-menu a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.enlaces-menu a:hover{
+    color: #B6B6B6;
+}
+nav button{
+    margin-left: 80%;
+    background-color: #5EC31D;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+nav button:hover{
+    background-color: #AFDE91;
+}
+iframe{
+    width: 100%;
+    height: calc(100vh);
+    border: none;
+}
+/* INICIO */
+.portada{
+    min-height: calc(100vh);
+    background-image: url('../imagenes/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+
+
+}
+.logo_portada{
+    position: absolute;
+    width: 170px;
+    left: 90%;
+    transform: translateX(-50%);
+}
+.texto_portada{
+    color: #FFFFFF;
+    padding: 20px;
+        font-family: 'Outfit', sans-serif;
+        font-size: 30px;
+}
+h1{
+    color: #FFFFFF;
+    font-size: 60pt;
+    font-family: 'Outfit', sans-serif;
+    margin-top: 20px;
+    padding: 20px;
+}
+h2{
+    color: #5DC11C;
+    font-size: 76px;
+    font-family: "Outfit", sans-serif;
+    padding: 20px;
+}
+.linea_verde1{
+    color: #5DC11C;
+}
+.descripcion{
+    color: white;
+     font-family: "Outfit", sans-serif;
+     font-size: 25px;
+     padding: 20px;
+}
+.boton_principal{
+    background-color: #5DC11C;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+}
+.boton_principal:hover{
+     background-color: #AFDE91;
+     cursor: pointer;
+
+}
+.Productos_destacados{
+    background-color: rgba(255, 255, 255, 0.50);
+    width: 60%;
+    border-radius: 30px;
+    padding: 20px;
+}
+.Enccabezado_productos{
+    display: flex;
+    justify-content: space-between;
+}
+.Linea_verde2{
+     color: #5DC11C;
+}
+.vertodo:hover{
+    color: white;
+}
+h3{
+      font-family: "Outfit", sans-serif;
+      font-size: 30px;
+      font-weight: 400;
+      letter-spacing: 5px;
+}
+.Productos-tarjetas{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+.tarjeta{
+    background-color: #f6f0e5;
+    width: 180px;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+.tarjeta:hover{
+    background-color: rgb(200, 200, 200);
+}
+.tarjeta img{
+    width: 100%;
+}
+/*aqui va el footer*/
+footer{
+    width: 100%;
+    min-height: 100px;
+    background-color: #0F2D5B;
+    color: white;
+    text-align: center;
+     font-family: "Outfit", sans-serif;
+     display: flex;
+align-items: center;
+     justify-content: center;
+}
+/*aqui va la seccion ropa*/
+.mujer,
+.hombre{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 100px;
+}
+.producto{
+    position: relative;
+    height: 300px;
+    background-color: #f5eee1;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.producto:hover{
+    background-color: #c7c7c7;
+}
+.producto img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+.producto p:nth-of-type(1){
+    color: #153667;
+    font-family: "Outfit", sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+}
+.producto p:nth-of-type(2){
+    font-family: "Outfit", sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    color: #02a232;
+}
+.pr-ant{
+    color: #888;
+    text-decoration: line-through;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+.desc{
+    color: crimson;
+    margin-left: 10px;
+    font-size: small;
+    background-color: #f9c6f2;
+}
+.producto button img{
+    width: 30px;
+    height: 30px;
+}
+.producto button{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.producto button:hover{
+    background-color: #c0c0c0;
+}
+.seccion{
+    font-family: "Outfit", sans-serif;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: x-large;
+}
+#color1_prod1{
+    color: rgb(228, 115, 134);
+    font-size: 50px;
+}
+#color1_prod2{
+    color: #961d96;
+    font-size: 50px;
+}
+#color1_prod3{
+    color: #376707;
+    font-size: 50px;
+}
+#color2_prod1{
+    color: #f8ec0b;
+    font-size: 50px;
+}
+
+#color2_prod2{
+    color: #7b177a;
+    font-size: 50px;
+}
+
+#color2_prod3{
+    color: #2654eb;
+    font-size: 50px;
+}
+#color3_prod1{
+    color: #f7a349;
+    font-size: 50px;
+}
+#color3_prod2{
+    color: #dc095e;
+    font-size: 50px;
+}
+
+#color3_prod3{
+    color: #fa2041;
+    font-size: 50px;
+}
+#Hcolor_prod1{
+    color: #5a5e8e;
+    font-size: 50px;
+}
+#Hcolor_prod2{
+    color: #12b2da;
+    font-size: 50px;
+}
+#Hcolor_prod3{
+    color: #88e417;
+    font-size: 50px;
+}
+#Hcolor1_prod1{
+    color: #1726f7;
+    font-size: 50px;
+}
+#Hcolor1_prod2{
+    color: #040404;
+    font-size: 50px;
+}
+#Hcolor1_prod3{
+    color: #44f01d;
+    font-size: 50px;
+}
+#Hcolor2_prod1{
+    color: #0909f0;
+    font-size: 50px;
+}
+#Hcolor2_prod2{
+    color: #090909;
+    font-size: 50px;
+}
+#Hcolor2_prod3{
+    color: #f51815;
+    font-size: 50px;
+}
+/*aqui personalizo tips*/
+.cont_tips{
+    background-color: #FCFCF3;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 500px;
+    font-family: "Outfit", sans-serif;
+}
+.cont_tips img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+.metodo div:nth-of-type(2) img{
+    max-width: 200px;
+}
+.cont_tips section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cont_tips section:nth-child(2) div:first-child img{
+    max-width: 200px;
+    margin-bottom: 50px;
+}
+.cont_tips section:nth-child(2) div:last-child img{
+    max-width: 500px;
+}
+.cont_tips section{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+/*Aqui personalizo sedes*/
+.contenedor_sedes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.map img{
+width: 120%;
+height: auto;
+}
+.pucallpa,
+.sede_lima,
+.sede_iquitos{
+    background-color: #F0F0F0;
+    margin-left: 10%;
+    padding: 25px;
+    margin-bottom: 50px;
+    margin-right: 10%;
+    border-radius: 30px;
+}
+.pucallpa img{
+    width: 100%;
+}
+.sede_lima,
+.sede_iquitos{
+    display: flex;
+}
+.sede_lima img,
+.sede_iquitos img{
+    max-height: 280px;
+}
+.pucallpa h2,
+.sede_lima h2,
+.sede_iquitos h2{
+    font-size: 24px;
+}
+.lista_servicio{
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+.contenedor_sedes button{
+   background-color: #6fcc31;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    cursor: pointer; 
+    border: none;
+}
+.contenedor_sedes button:hover{
+    background-color: #d3ffb9;
+}
+.sede_lima .info_sede,
+.sede_iquitos .info_sede{
+flex: 1;
+padding: 25px;
+}
+/*aqui personalizo contacto*/
+.form_cont{
+     display: grid;
+     grid-template-columns: 45% 55%;
+     gap: 40px;
+     margin: 30px;
+}
+.formulario{
+    width: 100%;
+}
+.formulario h1{
+    color: #153667;
+    margin: 10px;
+}
+.formulario form{
+    display: flex;
+    flex-direction: column;
+}
+.formulario label{
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+}
+.formulario form > input{
+    padding: 15px;
+}
+.formulario button{
+    background-color: rgb(143, 230, 50);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+.formulario button:hover{
+    background-color: #7cf32d;
+    transform: scale(1.05) ;
+}
+.formulario form > textarea{
+    height: 100px;
+}
+.informacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 150px;
+}
+.corr-tel{
+    text-align: center;
+    border: 1px solid #153667;
+    border-radius: 30px;
+}
+.corr-tel img{
+    width: 50px;
+}
+.direccion{
+grid-column: 2;
+grid-row: 2;
+text-align: center;
+}
+.ubi-cont{
+     border: 1px solid #153667;
+    border-radius: 30px;
+    padding: 20px;
+}
+.ubi-cont img{
+width: 200px;
+}
+.punto-ubi{
+    max-width: 50px;
+}
+.mapa-sedes{
+    width: 100%;
+    height: 300px;
+}
